@@ -53,8 +53,10 @@ Eloquently written super light weight CSS live waves design of the front page ma
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- screenshot examples -->
+
 ![image](https://user-images.githubusercontent.com/73205087/156939095-7ea39c61-51a5-4245-8229-c0c1065e3a57.png)
-![111](https://user-images.githubusercontent.com/73205087/156939620-a5a37e5e-4f95-4b5c-b0bd-5a18fb5f9dd6.png)
+
+![image](https://user-images.githubusercontent.com/73205087/156939620-a5a37e5e-4f95-4b5c-b0bd-5a18fb5f9dd6.png)
 
 ### Built With
 
