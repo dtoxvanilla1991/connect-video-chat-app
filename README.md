@@ -47,9 +47,13 @@
 
 ## About The App
 
-Connect is a most trusted video chat app of your choice. It is British communications technology company headquartered in Burrafirth, North Isles, England. It provides videotelephony and online chat services through a cloud-based peer-to-peer software platform and is used for teleconferencing, telecommuting, distance education, and social relations.
+Connect is a most trusted video chat app of your choice. It is British communications technology company headquartered in Burrafirth, North Isles, England. It provides videotelephony and online chat services through a cloud-based peer-to-peer software platform and is used for teleconferencing, telecommuting, distance education, and social relations. 
+
+Eloquently written super light weight CSS live waves design of the front page makes it an amazing user experience by not slowing down page loading time.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+![image](https://user-images.githubusercontent.com/73205087/156936903-25ca1f41-735b-4fd5-ac26-d68662cd84f0.png)
 
 ### Built With
 

@@ -101,86 +101,121 @@ function App() {
   };
 
   return (
-    <>
-      <h1>Connect</h1>
-      <div className="container">
-        <div className="video-container">
-          <div className="video">
-            {stream && (
-              <video
-                playsInline
-                muted
-                ref={myVideo}
-                autoPlay
-              />
-            )}
-          </div>
-          <div className="video">
-            {callAccepted && !callEnded ? (
-              <video
-                playsInline
-                ref={userVideo}
-                autoPlay
-              />
-            ) : null}
-          </div>
-        </div>
-        <div className="myId">
-          <TextField
-            id="filled-basic"
-            label="Name"
-            variant="filled"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            style={{ marginBottom: "20px" }}
-          />
-          <CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              startIcon={<Assignment fontSize="large" />}
-            >
-              Copy ID
-            </Button>
-          </CopyToClipboard>
+<>
 
-          <TextField
-            id="filled-basic"
-            label="ID to call"
-            variant="filled"
-            value={idToCall}
-            onChange={(e) => setIdToCall(e.target.value)}
+<div className="header">
+
+{/* <!--MAIN CONTENT before waves--> */}
+<div className="inner-header flex">
+<section className="hero">
+<h1>Connect</h1>
+<p>~ Connecting the world one connection at a time ~</p>
+  </section>
+  <div className="container">
+    <div className="video-container">
+      <div className="video">
+        {stream && (
+          <video
+            playsInline
+            muted
+            ref={myVideo}
+            autoPlay
           />
-          <div className="call-button">
-            {callAccepted && !callEnded ? (
-              <Button variant="contained" color="secondary" onClick={leaveCall}>
-                End Call
-              </Button>
-            ) : (
-              <IconButton
-                color="primary"
-                aria-label="call"
-                onClick={() => callUser(idToCall)}
-              >
-                <Phone fontSize="large" />
-              </IconButton>
-            )}
-            {idToCall}
-          </div>
-        </div>
-        <div>
-          {receivingCall && !callAccepted ? (
-            <div className="caller">
-              <h1>{name} is calling...</h1>
-              <Button variant="contained" color="primary" onClick={answerCall}>
-                Answer
-              </Button>
-            </div>
-          ) : null}
-        </div>
+        )}
       </div>
-    </>
+      <div className="video">
+        {callAccepted && !callEnded ? (
+          <video
+            playsInline
+            ref={userVideo}
+            autoPlay
+          />
+        ) : null}
+      </div>
+    </div>
+    <div className="myId">
+      <TextField
+        id="filled-basic"
+        label="Name"
+        variant="filled"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        style={{ marginBottom: "20px" }}
+      />
+      <CopyToClipboard text={me} style={{ marginBottom: "2rem" }}>
+        <Button
+          variant="contained"
+          color="primary"
+          startIcon={<Assignment fontSize="large" />}
+        >
+          Copy ID
+        </Button>
+      </CopyToClipboard>
+
+      <TextField
+        id="filled-basic"
+        label="ID to call"
+        variant="filled"
+        value={idToCall}
+        onChange={(e) => setIdToCall(e.target.value)}
+      />
+      <div className="call-button">
+        {callAccepted && !callEnded ? (
+          <Button variant="contained" color="secondary" onClick={leaveCall}>
+            End Call
+          </Button>
+        ) : (
+          <IconButton
+            color="primary"
+            aria-label="call"
+            onClick={() => callUser(idToCall)}
+          >
+            <Phone fontSize="large" />
+          </IconButton>
+        )}
+        {idToCall}
+      </div>
+    </div>
+    <div>
+      {receivingCall && !callAccepted ? (
+        <div className="caller">
+          <h1>{name} is calling...</h1>
+          <Button variant="contained" color="primary" onClick={answerCall}>
+            Answer
+          </Button>
+        </div>
+      ) : null}
+    </div>
+  </div>
+</div>
+
+{/* <!--Waves Container--> */}
+<div>
+<svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+<defs>
+<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+</defs>
+<g className="parallax">
+<use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+<use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+<use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+<use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+</g>
+</svg>
+</div>
+{/* <!--Waves end--> */}
+
+</div>
+{/* <!--Header ends--> */}
+
+{/* <!--FOOTER starts--> */}
+<div className="content flex">
+  <p className="footer">Connect &copy; 2022 </p>
+</div>
+{/* <!--FOOTER ends--> */}
+
+</>
   );
 }
-
 export default App;
