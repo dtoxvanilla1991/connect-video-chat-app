@@ -52,8 +52,9 @@ Connect is a most trusted video chat app of your choice. It is British communica
 Eloquently written super light weight CSS live waves design of the front page makes it an amazing user experience by not slowing down page loading time.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-![image](https://user-images.githubusercontent.com/73205087/156936903-25ca1f41-735b-4fd5-ac26-d68662cd84f0.png)
+<!-- screenshot examples -->
+![image](https://user-images.githubusercontent.com/73205087/156939095-7ea39c61-51a5-4245-8229-c0c1065e3a57.png)
+![111](https://user-images.githubusercontent.com/73205087/156939620-a5a37e5e-4f95-4b5c-b0bd-5a18fb5f9dd6.png)
 
 ### Built With
 

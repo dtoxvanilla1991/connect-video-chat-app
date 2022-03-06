@@ -34,7 +34,8 @@ p {
 
 .hero {
 	font-family: 'Papyrus', sans-serif;
-	color:#2b0666;
+	/* -webkit-text-stroke: 0.01px #2b0666; */
+  text-shadow:3px 0 0 #1a0341,0 1px 0 #1a0341,-1px 0 0 #1a0341,0 -1px 0 #1a0341;
 	width: 50%;
 	margin: 0 auto;
 }
@@ -75,12 +76,14 @@ p {
 	justify-content: center;
 	align-content: center;
 	margin-top: 5rem;
-	margin-left: 2rem;
 }
-
+video {
+  width: "100px"
+}
 .caller {
 	text-align: center;
 	color: #fff;
+  padding-right: 25%;
 }
 
 .header {
