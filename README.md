@@ -58,7 +58,6 @@ Frameworks/libraries/languages used:
 - HTML, CSS, JS
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
-- [React Redux](https://react-redux.js.org/)
 - [React-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 - [Socket.IO](https://socket.io/)
 - [Material UI](https://mui.com/)
